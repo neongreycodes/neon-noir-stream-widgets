@@ -98,6 +98,8 @@ The app must be running while you stream. Without it, the browser source stays e
 
 Let viewers spin a radar that picks one of your dares.
 
+![The Dare Radar in OBS: the radar has landed on "Spank", next to the Radar tab in the app](images/dare-radar.jpg)
+
 1. **On the chat site:** add an item to your **tip menu**, e.g. `Spin my Dare Radar`, with any token price you like.
 2. **In the app** (Radar tab): type the **same text** in **Trigger**. Upper and lower case don't matter, but the words must match exactly. Easiest: send the request once yourself, then click **Use as trigger** next to "Last request".
 3. Fill in up to **six dares** (empty fields are skipped) and click **Save**.
