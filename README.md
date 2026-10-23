@@ -1,3 +1,5 @@
+![Neon Noir Stream Widgets in OBS: tip banner with confetti, latest tip and rating, and the now-playing card](images/opener.jpg)
+
 # Neon Noir Stream Widgets (alpha)
 
 Stream overlays for **webcammodels.com / cammedia.com** in OBS (or any streaming app with a browser source):
@@ -70,6 +72,8 @@ It offers **Open settings** and **Quit**.
 2. **Chat username:** your name on the chat site, then **Save**. The app needs it to recognise *your* slot spins, dice rolls and ratings.
 3. **Pairing code:** the app shows a code like `K7QM-4XPA`. Click the extension icon in the browser, type the code and click **Pair**. The popup now says **Connected** and shows your username.
 4. **Overlay theme:** pick the look you like. It changes in OBS within 2 seconds.
+
+![Picking an overlay theme in the app: the Console Argon theme in OBS, next to the settings window](images/theme-select.jpg)
 
 The pairing code makes sure only *your* extension can send events to your overlays.
 
