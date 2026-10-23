@@ -8,6 +8,7 @@ Stream overlays for **webcammodels.com / cammedia.com** in OBS (or any streaming
 - **Now playing** (macOS only): the current Apple Music track with its cover and a progress bar.
 - **Themes:** Console Helium (pink), Amber and Argon (lavender).
 - **HD webcam + clean audio:** the browser extension asks your camera for 1080p and turns off voice filtering, so music sounds clean.
+- **Windows: not tested yet.** The Windows version has been built but not yet tried on a real PC. Making sure it runs is the **top priority right now**: if you're on Windows, your feedback helps most.
 
 It has three parts: the **app** (runs in the background), the **browser extension** (reads the chat) and the **browser source** in OBS (shows everything).
 
