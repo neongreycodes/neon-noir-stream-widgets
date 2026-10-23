@@ -5,10 +5,11 @@
 Stream overlays for **webcammodels.com / cammedia.com** in OBS (or any streaming app with a browser source):
 
 - **Chat events:** banners for ratings and tips, your latest rating and tip, slot machine and dice animations with confetti.
+- **Dare Radar:** a viewer tips for your tip menu item (e.g. "Spin my Dare Radar") and a big radar sweeps across your stream and lands on one of your dares. Between spins, a small card reminds viewers it's there.
 - **Now playing** (macOS only): the current Apple Music track with its cover and a progress bar.
 - **Themes:** Console Helium (pink), Amber and Argon (lavender).
 - **HD webcam + clean audio:** the browser extension asks your camera for 1080p and turns off voice filtering, so music sounds clean.
-- **Windows: not tested yet.** The Windows version has been built but not yet tried on a real PC. Making sure it runs is the **top priority right now**: if you're on Windows, your feedback helps most.
+- **Windows: partly tested.** The app installs and connects to the extension; the overlays haven't been fully tested on Windows yet. If you're on Windows, your feedback helps most.
 
 It has three parts: the **app** (runs in the background), the **browser extension** (reads the chat) and the **browser source** in OBS (shows everything).
 
@@ -69,10 +70,10 @@ It offers **Open settings** and **Quit**.
 
 ## 4. Set it up
 
-1. Open the app's settings (NG icon → **Open settings**).
-2. **Chat username:** your name on the chat site, then **Save**. The app needs it to recognise *your* slot spins, dice rolls and ratings.
-3. **Pairing code:** the app shows a code like `K7QM-4XPA`. Click the extension icon in the browser, type the code and click **Pair**. The popup now says **Connected** and shows your username.
-4. **Overlay theme:** pick the look you like. It changes in OBS within 2 seconds.
+1. Open the app's settings (NG icon → **Open settings**). The window has three tabs: **Connection**, **Radar** and **Overlay**. It opens on Connection the first time.
+2. **Chat username** (Connection tab): your name on the chat site, then **Save**. The app needs it to recognise *your* slot spins, dice rolls, ratings and tip menu requests.
+3. **Pairing code** (Connection tab): the app shows a code like `K7QM-4XPA`. Click the extension icon in the browser, type the code and click **Pair**. The popup now says **Connected** and shows your username.
+4. **Overlay theme** (Overlay tab): pick the look you like. It changes in OBS within 2 seconds.
 
 ![Picking an overlay theme in the app: the Console Argon theme in OBS, next to the settings window](images/theme-select.jpg)
 
@@ -93,6 +94,20 @@ The app must be running while you stream. Without it, the browser source stays e
 
 ---
 
+## 6. Dare Radar (optional)
+
+Let viewers spin a radar that picks one of your dares.
+
+1. **On the chat site:** add an item to your **tip menu**, e.g. `Spin my Dare Radar`, with any token price you like.
+2. **In the app** (Radar tab): type the **same text** in **Trigger**. Upper and lower case don't matter, but the words must match exactly. Easiest: send the request once yourself, then click **Use as trigger** next to "Last request".
+3. Fill in up to **six dares** (empty fields are skipped) and click **Save**.
+4. Turn the **Radar** switch **on**.
+5. Click **Test spin** to see it in OBS without a tip.
+
+When a viewer tips for that item, the radar appears in the middle of your stream for about 15 seconds, lands on one dare and fires confetti. Every tip menu request also updates "Latest Tip". While the radar is on, a small card above "Latest Tip" shows your tip menu item and cycles through your dares for 20 seconds every 10 minutes.
+
+---
+
 ## Updates
 
 When a new version is out, the app's settings window and the extension popup show **"Update available"**. Then:
@@ -109,6 +124,7 @@ When a new version is out, the app's settings window and the extension popup sho
 | The extension popup says **App not running** | Start the app (Applications / Start menu). |
 | The popup says **Not paired** | Enter the pairing code from the app's settings window again. |
 | Ratings and tips appear, but **slots / dice don't** | Check the **chat username** in the app: it must match your name on the chat site. |
+| The **radar doesn't spin** on a tip | Is the Radar switch **on** and at least one dare filled in? Does "Last request" in the Radar tab show the request? Then click **Use as trigger** and **Save**. Still nothing: **Show log**, it says why. |
 | The browser source in OBS is **empty** | Is the app running? Is the URL exactly `http://localhost:8787/neonnoirwidgets/`? Right-click the source → **Refresh**. |
 | **Mac:** no music card | Music must be playing in the **Music** app. If you clicked "Don't Allow" before: System Settings → Privacy & Security → Automation → Neon Noir Stream Widgets → turn on **Music**. |
 | Something else | In the app's settings window, click **Show log** and send the `app.log` file to neongrey. |
