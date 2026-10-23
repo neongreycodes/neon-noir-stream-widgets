@@ -19,8 +19,8 @@ Open the **[latest release](https://github.com/neongreycodes/neon-noir-stream-wi
 
 | You have | Download |
 | --- | --- |
-| a Mac (any, Intel or Apple Silicon) | `Neon Noir Stream Widgets_…_universal.dmg` |
-| a Windows PC | `Neon Noir Stream Widgets_…_x64-setup.exe` |
+| a Mac (any, Intel or Apple Silicon) | `Neon.Noir.Stream.Widgets_…_universal.dmg` |
+| a Windows PC | `Neon.Noir.Stream.Widgets_…_x64-setup.exe` |
 | either | `neon-noir-stream-widgets-extension-….zip` (the browser extension) |
 
 You need **Chrome, Edge or Brave** for the extension, and **OBS**.
