@@ -1,19 +1,19 @@
 ![Neon Noir Stream Widgets in OBS: tip banner with confetti, latest tip and rating, and the now-playing card](images/opener.jpg)
 
-# Neon Noir Stream Widgets (alpha)
+# Neon Noir Stream Widgets (beta)
 
 Stream overlays for **webcammodels.com / cammedia.com** in OBS (or any streaming app with a browser source):
 
 - **Chat events:** banners for ratings and tips, your latest rating and tip, slot machine and dice animations with confetti.
-- **Dare Radar:** a viewer tips for your tip menu item (e.g. "Spin my Dare Radar") and a big radar sweeps across your stream and lands on one of your dares. Between spins, a small card reminds viewers it's there.
+- **Dare Wheel:** a viewer tips for your tip menu item (e.g. "Spin my Dare Wheel") and a wheel spins on your stream and lands on one of your dares. Between spins, a small teaser card reminds viewers it's there.
 - **Now playing** (macOS only): the current Apple Music track with its cover and a progress bar.
-- **Themes:** Console Helium (pink), Amber and Argon (lavender).
+- **Themes:** Neon Noir Dark (the default, neon at night) and Neon Noir Light (the same look by day).
 - **HD webcam + clean audio:** the browser extension asks your camera for 1080p and turns off voice filtering, so music sounds clean.
 - **Windows: partly tested.** The app installs and connects to the extension; the overlays haven't been fully tested on Windows yet. If you're on Windows, your feedback helps most.
 
 It has three parts: the **app** (runs in the background), the **browser extension** (reads the chat) and the **browser source** in OBS (shows everything).
 
-> **Alpha version.** Things may break. If something doesn't work, tell neongrey, ideally with the log (see [Troubleshooting](#troubleshooting)).
+> **Beta version.** Things may still break. If something doesn't work, or you have an idea, reach out to Neon Grey: a DM on webcammodels.com when I'm online, Fan Mail when I'm offline, or a [GitHub issue](https://github.com/neongreycodes/neon-noir-stream-widgets/issues). The log helps (see [Troubleshooting](#troubleshooting)).
 
 ---
 
@@ -36,13 +36,13 @@ You need **Chrome, Edge or Brave** for the extension, and **OBS**.
 ### Mac
 
 1. Open the `.dmg` and drag **Neon Noir Stream Widgets** into **Applications**.
-2. Open it from Applications. macOS says it **can't check the app** ("unidentified developer"). That's expected: the alpha isn't registered with Apple. Click **Done**.
+2. Open it from Applications. macOS says it **can't check the app** ("unidentified developer"). That's expected: the beta isn't registered with Apple. Click **Done**.
 3. Open **System Settings → Privacy & Security**, scroll down, and click **Open Anyway** next to "Neon Noir Stream Widgets". Confirm with your password. You only do this once.
 4. When music plays, macOS asks whether the app may **control "Music"**. Click **OK**: that's how it reads the current track.
 
 ### Windows
 
-1. Run the `…-setup.exe`. Windows shows **"Windows protected your PC"**. That's expected for the alpha: click **More info → Run anyway**.
+1. Run the `…-setup.exe`. Windows shows **"Windows protected your PC"**. That's expected for the beta: click **More info → Run anyway**.
 2. Follow the installer.
 
 On Windows there is **no music widget yet**: the chat overlay works, the now-playing card doesn't appear.
@@ -70,12 +70,12 @@ It offers **Open settings** and **Quit**.
 
 ## 4. Set it up
 
-1. Open the app's settings (NG icon → **Open settings**). The window has three tabs: **Connection**, **Radar** and **Overlay**. It opens on Connection the first time.
+1. Open the app's settings (NG icon → **Open settings**). On every start it first shows a short **beta notice**: click **Agree & continue** (**About**, bottom right, shows it again). The window has three tabs: **Connection**, **Dare Wheel** and **Overlay**. It opens on Connection the first time.
 2. **Chat username** (Connection tab): your name on the chat site, then **Save**. The app needs it to recognise *your* slot spins, dice rolls, ratings and tip menu requests.
-3. **Pairing code** (Connection tab): the app shows a code like `K7QM-4XPA`. Click the extension icon in the browser, type the code and click **Pair**. The popup now says **Connected** and shows your username.
-4. **Overlay theme** (Overlay tab): pick the look you like. It changes in OBS within 2 seconds.
+3. **Pairing code** (Connection tab): the app shows a code like `K7QM-4XPA`. Click the extension icon in the browser, type the code and click **Pair**. The popup now says **Connected to the app** and shows your username.
+4. **Overlay theme** (Overlay tab): pick the look you like; **Neon Noir Dark** is the default. It changes in OBS within 2 seconds.
 
-![Picking an overlay theme in the app: the Console Argon theme in OBS, next to the settings window](images/theme-select.jpg)
+![Picking an overlay theme in the app, next to OBS (older look)](images/theme-select.jpg)
 
 The pairing code makes sure only *your* extension can send events to your overlays.
 
@@ -94,19 +94,19 @@ The app must be running while you stream. Without it, the browser source stays e
 
 ---
 
-## 6. Dare Radar (optional)
+## 6. Dare Wheel (optional)
 
-Let viewers spin a radar that picks one of your dares.
+Let viewers spin a wheel that picks one of your dares.
 
-![The Dare Radar in OBS: the radar has landed on "Spank", next to the Radar tab in the app](images/dare-radar.jpg)
+![The Dare Wheel's predecessor, the Dare Radar, in OBS next to the app (older look)](images/dare-radar.jpg)
 
-1. **On the chat site:** add an item to your **tip menu**, e.g. `Spin my Dare Radar`, with any token price you like.
-2. **In the app** (Radar tab): type the **same text** in **Trigger**. Upper and lower case don't matter, but the words must match exactly. Easiest: send the request once yourself, then click **Use as trigger** next to "Last request".
+1. **On the chat site:** add an item to your **tip menu**, e.g. `Spin my Dare Wheel`, with any token price you like.
+2. **In the app** (Dare Wheel tab): type the **same text** in **Trigger**. Upper and lower case don't matter, but the words must match exactly. Easiest: send the request once yourself, then click **Use as trigger** next to "Last request".
 3. Fill in up to **six dares** (empty fields are skipped) and click **Save**.
-4. Turn the **Radar** switch **on**.
+4. Turn the **Dare Wheel** switch **on**.
 5. Click **Test spin** to see it in OBS without a tip.
 
-When a viewer tips for that item, the radar appears in the middle of your stream for about 15 seconds, lands on one dare and fires confetti. Every tip menu request also updates "Latest Tip". While the radar is on, a small card above "Latest Tip" shows your tip menu item and cycles through your dares for 20 seconds every 10 minutes.
+When a viewer tips for that item, the wheel appears on your stream, spins for about 5 seconds, lands on one dare, and a big card shows it with confetti (about 18 seconds in all). Every tip menu request also updates "Latest Tip". While the Dare Wheel is on, a small **teaser** card above "Latest Tip" shows your tip menu item and cycles through your dares. Set it in the **Teaser** line: on/off, and **always** (on screen between spins) or **every** 1–60 minutes for 5–60 seconds (default: every 2 minutes for 20 seconds). **Preview teaser** shows it right away.
 
 ---
 
@@ -126,11 +126,11 @@ When a new version is out, the app's settings window and the extension popup sho
 | The extension popup says **App not running** | Start the app (Applications / Start menu). |
 | The popup says **Not paired** | Enter the pairing code from the app's settings window again. |
 | Ratings and tips appear, but **slots / dice don't** | Check the **chat username** in the app: it must match your name on the chat site. |
-| The **radar doesn't spin** on a tip | Is the Radar switch **on** and at least one dare filled in? Does "Last request" in the Radar tab show the request? Then click **Use as trigger** and **Save**. Still nothing: **Show log**, it says why. |
+| The **Dare Wheel doesn't spin** on a tip | Is the Dare Wheel switch **on** and at least one dare filled in? Does "Last request" in the Dare Wheel tab show the request? Then click **Use as trigger** and **Save**. Still nothing: **Show log**, it says why. |
 | The browser source in OBS is **empty** | Is the app running? Is the URL exactly `http://localhost:8787/neonnoirwidgets/`? Right-click the source → **Refresh**. |
 | **Mac:** no music card | Music must be playing in the **Music** app. If you clicked "Don't Allow" before: System Settings → Privacy & Security → Automation → Neon Noir Stream Widgets → turn on **Music**. |
-| Something else | In the app's settings window, click **Show log** and send the `app.log` file to neongrey. |
+| Something else | In the app's settings window, click **Show log** and send the `app.log` file to Neon Grey (DM, Fan Mail or a GitHub issue). |
 
 ---
 
-Music overlay based on [apple-music-obs-overlay](https://github.com/m-shintaro/apple-music-obs-overlay) by Shintaro Matsumoto (MIT). UI built with [Amber Console](https://github.com/DutchDiederik/AmberConsole) by Diederik (BSD-3-Clause), fonts VT323 and Silkscreen (SIL OFL 1.1).
+Music overlay based on [apple-music-obs-overlay](https://github.com/m-shintaro/apple-music-obs-overlay) by Shintaro Matsumoto (MIT). App, extension and overlays use the Inter Display font (SIL OFL 1.1) and Font Awesome 4.7 (SIL OFL 1.1 / MIT); the overlays also use canvas-confetti (ISC).
