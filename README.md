@@ -135,12 +135,12 @@ The extension is your little spy in the chat. A friendly one.
 
 ## 4. Set it up
 
+![Switching to Neon Noir Light in the app's Overlay tab, with a 5-star rating banner on stream](images/theme-select-beta.jpg)
+
 1. Open the app's settings (NG icon → **Open settings**). On every start it first shows a short **beta notice**: click **Agree & continue** (**About**, bottom right, shows it again). The window has three tabs: **Connection**, **Dare Wheel** and **Overlay**. It opens on Connection the first time.
 2. **Chat username** (Connection tab): your name on the chat site, then **Save**. The app needs it to recognise *your* slot spins, dice rolls, ratings and tip menu requests.
 3. **Pairing code** (Connection tab): the app shows a code like `K7QM-4XPA`. Click the extension icon in the browser, type the code and click **Pair**. The popup now says **Connected to the app** and shows your username.
 4. **Overlay theme** (Overlay tab): pick the look you like; **Neon Noir Dark** is the default. It changes in OBS within 2 seconds.
-
-![Switching to Neon Noir Light in the app's Overlay tab, with a 5-star rating banner on stream](images/theme-select-beta.jpg)
 
 The pairing code makes sure only *your* extension can send events to your overlays. Nobody else gets to throw confetti on your stream.
 
@@ -163,6 +163,8 @@ The app must be running while you stream. Without it, the browser source stays e
 
 ## 6. Dare Wheel (optional)
 
+![The Dare Wheel spinning on stream after a viewer's tip](images/dare-wheel-beta.jpg)
+
 My favourite part. Let your viewers spin a wheel that picks one of your dares, and watch the chat go wild.
 
 Yes, the site has its own dare game. Mine is just better, sorry not sorry:
@@ -170,8 +172,6 @@ Yes, the site has its own dare game. Mine is just better, sorry not sorry:
 - **Your price, your rules.** You set the token price for a spin. The site's version is always 10 tokens.
 - **Up to six dares, not exactly six.** Got three good ones? Use three. The site insists on all six.
 - **It's a damn spinning wheel.** In neon. With confetti. Need I say more? 😎
-
-![The Dare Wheel spinning on stream after a viewer's tip](images/dare-wheel-beta.jpg)
 
 1. **On the chat site:** add an item to your **tip menu**, e.g. `Spin my Dare Wheel`, with any token price you like.
 2. **In the app** (Dare Wheel tab): type the **same text** in **Trigger**. Upper and lower case don't matter, but the words must match exactly. Easiest: send the request once yourself, then click **Use as trigger** next to "Last request".
