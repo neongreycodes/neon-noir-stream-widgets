@@ -35,6 +35,7 @@ Heads up: this is **pure music, no voice**. That's my setup and it's what I use.
 4. In Chrome, on the chat site, pick **Background Music** as your **microphone**.
 
 Now your music plays in your room *and* goes straight into your stream. Keep the browser extension running: it switches off the browser's voice filtering, which otherwise squashes music into something tinny. With it, your playlist sounds the way it should. 🎶
+
 ---
 
 [← Back to the start](../README.md) · [Next: Install the widgets →](install.md)

@@ -58,7 +58,7 @@ In the **Teaser** tab, switch it on and choose **always** (on screen the whole t
 
 Phone rings, pizza's here, cat's on the keyboard. Life happens. One click and your stream gets a full-screen away screen: your avatar, a "Be right back" banner and the song that's playing, with its cover in the background.
 
-- **Switch it on** in the **extension popup** (easiest, right next to the chat) or in the app (Features → **Be right back**). While it's on, the extension icon shows a **BRB** badge, so you don't forget you're "away". Been there.
+- **Switch it on** in the **extension popup** (easiest, right next to the chat) or in the app (Features → **Be right back**). While it's on, the extension icon shows a **BRB** badge, and the app's **Features** tab a pink dot, so you don't forget you're "away". Been there.
 - **Nothing gets lost.** Tips and Dare Wheel spins that come in meanwhile wait, and play one after another when you're back. Everything else keeps playing under the away screen.
 - **Live chat on the away screen:** turn on **Room chat → On Be right back** and the away screen becomes a live chat: the newest message big, its sender's avatar beside it, the name in huge outlined letters, the words lighting up as if read aloud, earlier messages on the right and the last senders in a row below. Each message gets read to the end before the next one comes in; when the chat gets busy, the ones that would have to wait go straight to the list. Your viewers keep talking to each other while you're gone. Like a party in your living room while you're in the kitchen.
 

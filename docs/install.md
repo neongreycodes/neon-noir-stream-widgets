@@ -75,7 +75,6 @@ The window has two views, switched at the top: **Settings** (who you are and how
 
 The pairing code makes sure only *your* extension can send events to your overlays. Nobody else gets to throw confetti on your stream.
 
-
 **In Features**, every part of the overlay has its own switch. What they all do is in [Features](features.md#the-features-view).
 
 ---
