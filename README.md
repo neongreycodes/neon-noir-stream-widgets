@@ -1,4 +1,4 @@
-![Neon Noir Stream Widgets on stream: tip banner with confetti, latest tip and rating, the now-playing card, and the app's Overlay tab](images/opener-beta.jpg)
+![Neon Noir Stream Widgets on stream: a tip banner with confetti, the Tip Action Teaser saying "Spin my Dare Wheel", and the Latest Tip and Latest Rating cards over a neon-lit webcam picture](images/hero-beta2.jpg)
 
 # Neon Noir Stream Widgets (beta)
 
